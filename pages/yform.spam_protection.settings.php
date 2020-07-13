@@ -42,7 +42,7 @@ if (rex::getUser()->isAdmin()) {
     
     $form->addFieldset($this->i18n('advanced_settings'));
     
-    $field = $form->addReadOnlyTextField('notification_email');
+    $field = $form->addTextField('notification_email');
     $field->setLabel($this->i18n('email'));
     $field->setNotice($this->i18n('email_notice'));
     $field->setAttribute('disabled', true);
